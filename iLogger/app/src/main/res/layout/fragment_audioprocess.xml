@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your description below"
+        android:id="@+id/textViewAudioRecord"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.10"
+        android:gravity="center_vertical|center_horizontal" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editAudioDescription"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.60"
+        android:background="@android:color/darker_gray"
+        android:hint="Default description"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Record"
+        android:id="@+id/btnAudioRecord"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="false" />
+
+</LinearLayout>
+

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MPCassigment</string>
+    <string name="title_service_detail">Service Detail</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

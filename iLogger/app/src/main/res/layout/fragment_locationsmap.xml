@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mapwhere"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/textViewNearby"
+            android:layout_above="@+id/btnNearby" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current Nearby"
+            android:id="@+id/btnNearby"
+            android:layout_alignTop="@+id/btnRecordCurrentLocation"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Record Current"
+            android:id="@+id/btnRecordCurrentLocation"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:text="New Text"
+            android:id="@+id/textViewNearby"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignEnd="@+id/btnNearby" />
+
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/lvLocationHistory"
+            android:layout_below="@+id/textViewNearby"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/map"
+            android:layout_above="@+id/btnNearby" />
+    </RelativeLayout>
+
+</LinearLayout>
